@@ -1,0 +1,73 @@
+{
+  "uuid": "ca4a5a2d-64b6-402a-946a-927bab09b9a2-tr-0-1001",
+  "historyId": "SigecomTestesUI.CadastroTeste.TesteCadastroComSucesso",
+  "fullName": "SigecomTestesUI.CadastroTeste.TesteCadastroComSucesso",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DOUGLAS-NOTE"
+    },
+    {
+      "name": "package",
+      "value": "SigecomTestesUI"
+    },
+    {
+      "name": "testMethod",
+      "value": "TesteCadastroComSucesso"
+    },
+    {
+      "name": "testClass",
+      "value": "CadastroTeste"
+    },
+    {
+      "name": "suite",
+      "value": "Cadastros"
+    },
+    {
+      "name": "subSuite",
+      "value": "Cliente"
+    }
+  ],
+  "links": [],
+  "name": "TesteCadastroComSucesso",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TesteCadastroComSucesso"
+  },
+  "stage": "finished",
+  "description": "Cadastro de cliente somente campos obrigatórios com endereço\n",
+  "steps": [
+    {
+      "name": "TesteCadastroComSucesso",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "38f9fd9962a04939afa3040b378d02ea-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1709238017343,
+      "stop": 1709238034110
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1709238017342,
+  "stop": 1709238034114
+}

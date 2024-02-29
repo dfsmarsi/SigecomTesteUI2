@@ -1,0 +1,14 @@
+{
+    "allure": {
+      "directory": "C:\\Users\\Douglas\\Documents\\Projetos\\SigecomTesteUI2\\SigecomTestesUI\\Allure\\Relatorios",
+      "allowEmptySuites": true,
+      "enableParameters": true,
+      "cleanResultDirectory": true,
+      "allowLocalHistoryTrend": false,
+      "links": [
+        "http://mysite.com/{link}",
+        "http://mysite.com/{issue}",
+        "http://mysite.com/{tms}"
+      ]
+    }
+}   
