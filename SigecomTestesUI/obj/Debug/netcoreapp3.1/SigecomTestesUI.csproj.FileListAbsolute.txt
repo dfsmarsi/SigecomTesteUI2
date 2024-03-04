@@ -111,3 +111,4 @@ C:\Users\Douglas\Documents\Projetos\SigecomTesteUI2\SigecomTestesUI\obj\Debug\ne
 C:\Users\Douglas\Documents\Projetos\SigecomTesteUI2\SigecomTestesUI\obj\Debug\netcoreapp3.1\SigecomTestesUI.dll
 C:\Users\Douglas\Documents\Projetos\SigecomTesteUI2\SigecomTestesUI\obj\Debug\netcoreapp3.1\SigecomTestesUI.pdb
 C:\Users\Douglas\Documents\Projetos\SigecomTesteUI2\SigecomTestesUI\obj\Debug\netcoreapp3.1\SigecomTestesUI.genruntimeconfig.cache
+C:\Users\Douglas\Documents\Projetos\SigecomTesteUI2\SigecomTestesUI\bin\Debug\netcoreapp3.1\FirebirdSql.Data.FirebirdClient.dll

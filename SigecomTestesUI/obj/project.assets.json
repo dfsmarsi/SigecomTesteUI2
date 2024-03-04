@@ -90,6 +90,15 @@
           "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
         }
       },
+      "FirebirdSql.Data.FirebirdClient/10.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FirebirdSql.Data.FirebirdClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FirebirdSql.Data.FirebirdClient.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.9.4": {
         "type": "package",
         "compile": {
@@ -1514,6 +1523,26 @@
         "lib/net40/SeleniumExtras.PageObjects.dll",
         "lib/net45/SeleniumExtras.PageObjects.dll",
         "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
+      ]
+    },
+    "FirebirdSql.Data.FirebirdClient/10.0.0": {
+      "sha512": "x+JkSd6TeL9zUXDbi5C0NPeZ1ejo5sw3G9nhoxvVGXhaU399agYgO5RXtYRmcS4GkeA57Q9sThe5pFL2knSdXQ==",
+      "type": "package",
+      "path": "firebirdsql.data.firebirdclient/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "firebird-logo.png",
+        "firebirdsql.data.firebirdclient.10.0.0.nupkg.sha512",
+        "firebirdsql.data.firebirdclient.nuspec",
+        "lib/net48/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net5.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net6.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net7.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/netstandard2.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/netstandard2.1/FirebirdSql.Data.FirebirdClient.dll",
+        "license.txt"
       ]
     },
     "Microsoft.CodeCoverage/16.9.4": {
@@ -5087,6 +5116,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Appium.WebDriver >= 4.3.2",
+      "FirebirdSql.Data.FirebirdClient >= 10.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "NUnit >= 3.13.2",
       "NUnit.Allure >= 1.2.1.1",
@@ -5136,6 +5166,10 @@
           "Appium.WebDriver": {
             "target": "Package",
             "version": "[4.3.2, )"
+          },
+          "FirebirdSql.Data.FirebirdClient": {
+            "target": "Package",
+            "version": "[10.0.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

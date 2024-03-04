@@ -9,6 +9,7 @@
       "SigecomTestesUI/1.0.0": {
         "dependencies": {
           "Appium.WebDriver": "4.3.2",
+          "FirebirdSql.Data.FirebirdClient": "10.0.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "NUnit": "3.13.2",
           "NUnit.Allure": "1.2.1.1",
@@ -84,6 +85,14 @@
           "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {
             "assemblyVersion": "3.11.0.0",
             "fileVersion": "3.11.0.0"
+          }
+        }
+      },
+      "FirebirdSql.Data.FirebirdClient/10.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/FirebirdSql.Data.FirebirdClient.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
           }
         }
       },
@@ -1014,6 +1023,13 @@
       "sha512": "sha512-DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
       "path": "dotnetseleniumextras.pageobjects/3.11.0",
       "hashPath": "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512"
+    },
+    "FirebirdSql.Data.FirebirdClient/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x+JkSd6TeL9zUXDbi5C0NPeZ1ejo5sw3G9nhoxvVGXhaU399agYgO5RXtYRmcS4GkeA57Q9sThe5pFL2knSdXQ==",
+      "path": "firebirdsql.data.firebirdclient/10.0.0",
+      "hashPath": "firebirdsql.data.firebirdclient.10.0.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.9.4": {
       "type": "package",

@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium.Windows;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Threading;
 
@@ -113,5 +114,44 @@ namespace SigecomTestesUI
 
         public void EsperarAcaoEmSegundos(int tempoEmSegundos) =>
             Thread.Sleep(TimeSpan.FromSeconds(tempoEmSegundos));
+
+        public void ClicarBotaoId(string nomeBotao) =>
+            _driver.FindElementByAccessibilityId(nomeBotao).Click();
+
+        public void DarDuploCliqueNoBotaoName(string nomeBotao)
+        {
+            var botaoEncontrado = _driver.FindElementByName(nomeBotao);
+            var acao = new Actions(_driver);
+            acao.MoveToElement(botaoEncontrado);
+            acao.DoubleClick();
+            acao.Perform();
+        }
+
+        public void DarDuploCliqueNoBotaoId(string nomeBotao)
+        {
+            var botaoEncontrado = _driver.FindElementByAccessibilityId(nomeBotao);
+            var acao = new Actions(_driver);
+            acao.MoveToElement(botaoEncontrado);
+            acao.DoubleClick();
+            acao.Perform();
+        }
+
+        public void FecharJanelaComEscId(string idCampoParaFocar)
+        {
+            var campo = EncontrarElementoId(idCampoParaFocar);
+            campo.SendKeys(Keys.Escape);
+        }
+
+        public void FecharJanelaComEscName(string nomeJanela) =>
+            RealizarAcaoDaTeclaDeAtalhoNaTelaName(nomeJanela, Keys.Escape);
+
+        public void RealizarAcaoDaTeclaDeAtalhoNaTelaName(string nomeJanela, string teclaDeAtalho) =>
+            _driver.FindElementByName(nomeJanela).SendKeys(teclaDeAtalho);
+
+        public void RealizarAcaoDaTeclaDeAtalhoNaTelaId(string nomeJanela, string teclaDeAtalho) =>
+            _driver.FindElementByAccessibilityId(nomeJanela).SendKeys(teclaDeAtalho);
+
+        public void RealizarAcaoDaTeclaDeAtalhoCtrlAltCombinadaNaTela(string nomeJanela, string teclaDeAtalho) =>
+            _driver.FindElementByName(nomeJanela).SendKeys(Keys.Control + Keys.Alt + teclaDeAtalho);
     }
 }

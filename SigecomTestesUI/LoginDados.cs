@@ -2,7 +2,7 @@
 {
     public class LoginDados
     {
-        public string Usuario = "DOUGLAS";
-        public string Senha = "123";
+        public string Usuario = "TESTE";
+        public string Senha = "1";
     }
 }

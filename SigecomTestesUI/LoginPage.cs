@@ -12,17 +12,19 @@ namespace SigecomTestesUI
             _manipuladorService = new ManipuladorService(driver);
         }
 
-        private const string NomeCampoUsuario = "txtUsuario";
-        private const string NomeCampoSenha = "txtSenha";
+        private const string IdCampoUsuario = "txtUsuario";
+        private const string IdCampoSenha = "txtSenha";
         private const string NomeBotaoAcessar = ", Acessar";
-        private const string NomeFrmPrincipal = "SIGECOM - Sistema de Gestão Comercial - SISTEMASBR";
+        private const string NomeFrmPrincipal = "SIGECOM - Sistema de Gestão Comercial - Teste Ui - Qa";
+        private const string IdFrmLogin = "FrmLogin";
 
         public void RealizarLogin(LoginDados dadosLogin)
         {
             try
             {
-                _manipuladorService.PreencherCampoTextoId(NomeCampoUsuario, dadosLogin.Usuario);
-                _manipuladorService.PreencherCampoTextoId(NomeCampoSenha, dadosLogin.Senha);
+                ValidarSeTelaDeLoginEstaAberta();
+                _manipuladorService.PreencherCampoTextoId(IdCampoUsuario, dadosLogin.Usuario);
+                _manipuladorService.PreencherCampoTextoId(IdCampoSenha, dadosLogin.Senha);
                 _manipuladorService.ClicarNoBotaoName(NomeBotaoAcessar);
                 _manipuladorService.TrocarParaProximaJanelaLogin();
                 ValidarSeLoginFoiRealizado();
@@ -31,6 +33,10 @@ namespace SigecomTestesUI
             {
                 Console.WriteLine($"Erro ao fazer login: {ex.Message}");
             }
+        }
+        private void ValidarSeTelaDeLoginEstaAberta()
+        {
+            _manipuladorService.ObterValorElementoId(IdFrmLogin).Equals(IdFrmLogin);
         }
 
         private void ValidarSeLoginFoiRealizado()
