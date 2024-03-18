@@ -23,8 +23,8 @@ namespace SigecomTestesUI
             try
             {
                 ValidarSeTelaDeLoginEstaAberta();
-                _manipuladorService.PreencherCampoTextoId(IdCampoUsuario, dadosLogin.Usuario);
-                _manipuladorService.PreencherCampoTextoId(IdCampoSenha, dadosLogin.Senha);
+                _manipuladorService.DigitarNoCampoId(IdCampoUsuario, dadosLogin.Usuario);
+                _manipuladorService.DigitarNoCampoId(IdCampoSenha, dadosLogin.Senha);
                 _manipuladorService.ClicarNoBotaoName(NomeBotaoAcessar);
                 _manipuladorService.TrocarParaProximaJanelaLogin();
                 ValidarSeLoginFoiRealizado();

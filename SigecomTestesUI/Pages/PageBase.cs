@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium.Appium.Windows;
 
-namespace SigecomTestesUI
+namespace SigecomTestesUI.Pages
 {
     public class PageBase
     {
